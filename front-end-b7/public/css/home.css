@@ -1,0 +1,218 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"); */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+.nav{
+    background-color: #d9e9fb;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    height: 13%;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+}
+li{
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav-item{
+    text-decoration: none;
+    color: #090909;
+}
+.nav-item:hover{
+  color: rgb(30, 65, 154);
+    text-decoration: none;
+    transition: all .3s;
+}
+.logout{
+    width: 100%;
+    padding: 7px;
+    background-color: transparent;
+    border: 1px solid #090909;
+}
+
+.ctgr{
+    margin-top: 40px;
+  margin-left: 60px;
+  display: grid;
+  grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+  grid-auto-rows: minmax(49px, auto);
+  grid-gap : 200px;
+  margin-bottom: 4%;
+}
+img{
+    width: 200%;
+    height: auto;
+  }
+.title{
+    margin-top: 25px;
+    font-size: larger;
+    /* text-align: center; */
+    font-weight: bold;
+    letter-spacing: .2em;
+    line-height: 10px;
+}
+.button{
+
+        color: #090909;
+        padding: 0.5em 1.5em;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #e8e8e8;
+        border: 1px solid #e8e8e8;
+        transition: all .3s;
+        box-shadow: 6px 6px 12px #c5c5c5,
+                    -6px -6px 12px #ffffff;
+}
+       
+.button:hover {
+        border: 1px solid black;
+       }
+       
+.button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+       }
+.carte:hover{
+  transform: scale(1.12);
+  transition: all .22s;
+}
+.hireme{
+    margin-bottom: 2%;
+}
+.paragraph{
+    line-height: 2.6;
+}
+
+/* footer */
+.footer-basic {
+    background-color: #d9e9fb;
+    padding:40px 0;
+    background: color #000;;
+    color:#4b4c4d;
+    /* background-attachment: fixed; */
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+      margin-left: 10%;
+    padding:0 7px;
+  }
+  
+  .footer-basic ul a {
+    color:#000;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #000;
+    margin:0 8px;
+    color:black;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:14px;
+    color:#000;
+    margin-bottom:0;
+  }
+
+@media screen and (max-width: 1024px) {
+    .ctgr{
+        margin-top: 40px;
+        margin-left: 50px;
+        display: grid;
+        grid-template-columns:repeat(auto-fill,minmax(90px,140px));
+        grid-gap : 140px;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width  : 960px){
+.ctgr{
+    margin-top: 2%;
+    margin-left: 230px;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(50px,110px));
+    grid-gap : 127px;
+}
+}
+@media(max-width : 875px){
+.ctgr{
+    margin-left: 206px;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(50px,95px));
+}
+}
+@media(max-width : 800px){
+.ctgr{
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(50px,88px));
+}
+
+}
+
+@media (max-width : 710px) {
+.ctgr{ margin-left: 190px;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(50px,115px));
+}
+}
+
+@media(max-width : 470px){
+.ctgr{
+    grid-template-columns:repeat(auto-fill,minmax(50px,155px));
+}
+}
+
+@media(max-width :370px){
+    .ctgr{
+        grid-template-columns:repeat(auto-fill,minmax(50px,199px));
+    }
+}
+
+
+
