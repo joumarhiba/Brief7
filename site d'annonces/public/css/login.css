@@ -1,0 +1,199 @@
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+*/
+* {
+    font-family: "Poppins";
+  }
+
+  .screen-1 {
+    transform: translateX(50%);
+    height: 97vh;
+    width: 50%;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d9e9fb;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 2em #d9e9fb;
+    /* gap: 2em; */
+    margin: 6% 0;
+  }
+  .screen-1 .compte {
+    margin: 2.4em 0;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1.5em;
+    width: 17%;
+  }
+  
+  .screen-1 .login {
+    /* padding: 1em; */
+    background: rgb(30, 65, 154);
+    /* background: #87CEFA; */
+    color: white;
+    width: 30%;
+    border-radius: 2px;
+    text-align: center;
+    padding: 1em;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 14px;
+    margin-left: auto;
+    font-weight: 500;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.13);
+    border: none;
+    transition: all 0.3s ease;
+    outline: 0;
+    /* letter-spacing: 1px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 800;
+    margin-bottom: 4%; */
+  }
+  .login2{
+    color: rgb(30, 65, 154);
+  }
+  .login2:hover{
+    text-decoration: underline;
+    color:rgb(30, 65, 154);
+    transition: all .2s;
+  }
+  .screen-1 .footer {
+    display: flex;
+    font-size: 0.7em;
+    color: #5e5e5e;
+    gap: 14em;
+    padding-bottom: 10em;
+  }
+  .screen-1 .footer span {
+    cursor: pointer;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+
+
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 6px -1px rgba(182, 157, 230, 0.65);
+}
+button:hover:active {
+  transform: scale(0.99);
+}
+
+@media(max-width :966px){
+  .screen-1 .compte{
+    margin: 2.7em 0;
+    width: 19%;
+  }
+  .form-floating > .form-control , .screen-1 .login{
+    padding: .9rem 0.7rem;
+    line-height: 1;
+    width:125%;
+    margin-left: -32px;
+    height: 5%;
+    font-size: .89rem;
+  }
+}
+
+@media (max-width : 800px){
+  .jobbing {
+    width: 20%;
+}
+.screen-1{
+  width: 60%;
+  transform: translateX(40%);
+}
+.screen-1 .compte {
+  width: 21%;
+}
+.form-floating > .form-control , .screen-1 .login{
+ 
+  width:105%;
+  margin-left: -25px;
+  height: 5%;
+  font-size: .89rem;
+}
+p, label{
+  font-size: 14px;
+}
+}
+
+@media (max-width : 674px){
+  .screen-1 .compte {
+    width: 25%;
+  }
+  body{
+    font-size: .9em;
+  }
+}
+@media (max-width : 545px){
+  .screen-1 .compte {
+    width: 29%;
+  }
+  body{
+    font-size: .84em;
+  }
+  .screen-1{
+    width: 66%;
+    transform: translateX(30%);
+  }
+  .form-floating > .form-control , .screen-1 .login{
+    padding: .8rem 0.6rem;
+    line-height: .9;
+    width:135%;
+    margin-left: -35px;
+    font-size: .89rem;
+  }
+}
+@media(max-width : 495px){
+  .form-floating > .form-control , .screen-1 .login{
+    line-height: .8;
+    margin-left: -25px;
+  } 
+  .screen-1 .compte {
+    width: 32%;
+}
+}
+
+@media(max-width :420px){
+  .form-floating > .form-control , .screen-1 .login{
+    width:107%;
+    margin-left: -11px;
+    font-size: .8rem;
+  }
+  body{
+    font-size: .78em;
+  }
+  .screen-1{
+    width: 70%;
+    transform: translateX(20%);
+  }
+}
+@media(max-width :345px){
+  .form-floating > .form-control , .screen-1 .login{
+    padding: .9rem 0.6rem;
+    line-height: .3;
+    width:100%;
+    margin-left: -5px;
+    /* font-size: .8rem; */
+  }
+  body{
+    font-size: .5em;
+  }
+  .screen-1{
+    margin: 5.5% 0;
+    width: 70%;
+    height: 82vh;
+    transform: translateX(20%);
+  }
+  .screen-1 .compte {
+    width: 35%;
+    margin: 2em 0;
+  }
+}

@@ -1,0 +1,107 @@
+.form{
+    background-size:1600px;
+    height: 150%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 70%;
+    margin-top: 2.5%;
+    transform: translateX(24%);
+    opacity: .8;
+    padding: 30px 13px 50px;
+}
+.title{
+    text-align: center;
+}
+.button {
+    position: relative;
+    background-color: #1b64ad;
+    border: none;
+    font-size: 19px;
+    color: #FFFFFF;
+    padding: 6px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button:after {
+    content: "";
+    background: #1b64ad;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+ 
+ul .li {
+    background-color: transparent;
+    --c: #1b64ad;
+    color: var(--c);
+    font-size: 14px;
+    border: 2px solid var(--c);
+    border-radius: 0.5em;
+    width: 5em;
+    height: 3em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-align: right;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+    padding-right: .6em;
+}
+ul .li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+ul .li:hover {
+    color: #d9e9fb;
+    /* border-color: #d9e9fb; */
+}
+
+ul .li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+ul .li span:nth-child(1) {
+    --n: 1;
+}
+
+ul .li span:nth-child(2) {
+    --n: 2;
+}
+
+ul .li span:nth-child(3) {
+    --n: 3;
+}
+
+ul .li span:nth-child(4) {
+    --n: 4;
+}
